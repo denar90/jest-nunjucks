@@ -1,0 +1,5 @@
+{
+  "transform": {
+    "^.+\\.njk$": "../index.js"
+  }
+}
