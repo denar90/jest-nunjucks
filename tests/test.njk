@@ -1,1 +1,3 @@
-<div>{{ testString }}</div>
+{% from './test2.njk' import testMacro %}
+
+<div>{{ testString }}</div>{{ testMacro() }}
