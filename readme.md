@@ -20,6 +20,22 @@ Add to your config
 }
 ```
 
+To use [nunjucks configuration options](https://mozilla.github.io/nunjucks/api.html#configure) just add them into global jest config
+
+```json
+"jest": {
+  "globals": {
+    "nunjucks": {
+      "throwOnUndefined": true,
+      "trimBlocks": true
+    }
+  },
+  "transform": {
+    "^.+\\.njk$": "jest-nunjucks"
+  }
+}
+```
+
 ## License 
 
 MIT
