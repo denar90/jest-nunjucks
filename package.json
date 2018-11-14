@@ -11,6 +11,10 @@
     "nunjucks"
   ],
   "author": "Artem Denysov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denar90/jest-nunjucks.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "jest": "^23.5.0",
