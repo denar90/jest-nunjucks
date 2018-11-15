@@ -1,0 +1,13 @@
+{
+  "globals": {
+    "nunjucks": {
+      "config": {
+        "throwOnUndefined": true,
+        "trimBlocks": true
+      }
+    }
+  },
+  "transform": {
+    "^.+\\.njk$": "../../index.js"
+  }
+}

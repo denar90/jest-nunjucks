@@ -4,7 +4,7 @@
   "description": "Jest processor that compiles nunjucks templates",
   "main": "index.js",
   "scripts": {
-    "test": "jest test --config=./tests/jest.config.json"
+    "test": "jest test --no-cache --config=./tests/with-config/jest.config.json && jest test --no-cache --config=./tests/with-root/jest.config.json"
   },
   "keywords": [
     "jest",
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "jest": "^23.5.0",
+    "jest": "^23.6.0",
     "nunjucks": "^3.1.3"
   }
 }

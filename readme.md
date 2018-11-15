@@ -26,8 +26,30 @@ To use [nunjucks configuration options](https://mozilla.github.io/nunjucks/api.h
 "jest": {
   "globals": {
     "nunjucks": {
-      "throwOnUndefined": true,
-      "trimBlocks": true
+      "config": {
+        "throwOnUndefined": true,
+        "trimBlocks": true
+      }
+    }
+  },
+  "transform": {
+    "^.+\\.njk$": "jest-nunjucks"
+  }
+}
+```
+
+To use set path to look for templates use root option, it will be resolved with jest `<rootDir>`.
+If it's unset path for templates will be - `<rootDir>`;
+
+```json
+"jest": {
+  "globals": {
+    "nunjucks": {
+      "root": "./path-to-root-dir",
+      "config": {
+        "throwOnUndefined": true,
+        "trimBlocks": true
+      }
     }
   },
   "transform": {
