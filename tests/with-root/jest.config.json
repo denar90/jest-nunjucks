@@ -1,0 +1,14 @@
+{
+  "globals": {
+    "nunjucks": {
+      "root": "./root-tmpl-dir",
+      "config": {
+        "throwOnUndefined": true,
+        "trimBlocks": true
+      }
+    }
+  },
+  "transform": {
+    "^.+\\.njk$": "../../index.js"
+  }
+}
