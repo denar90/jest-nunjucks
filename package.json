@@ -1,6 +1,6 @@
 {
   "name": "jest-nunjucks",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Jest processor that compiles nunjucks templates",
   "main": "index.js",
   "scripts": {
